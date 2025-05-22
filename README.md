@@ -2,6 +2,12 @@
 
 An MCP server that provides tools for scanning web applications for common security vulnerabilities.
 
+## Demo
+
+![Web Security Scanner in action](./web-scan-mcp.gif)
+
+
+
 ## Features
 
 - Scans for Cross-Site Scripting (XSS) vulnerabilities
