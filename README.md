@@ -22,11 +22,21 @@ npm install
 npm run build
 ```
 
-## Running
-
-```bash
-npm start
+## Usage with Claude Desktop
+On Windows: %APPDATA%/Claude/claude_desktop_config.json
+```json
+{
+  "mcpServers": {
+    "web-security-scan": {
+      "command": "node",
+      "args": [
+        "C:\\path\\to\\mcp-web-security-scan\\dist\\server.js"
+      ]
+    }
+  }
+}
 ```
+
 
 ## Usage
 
@@ -42,6 +52,11 @@ Parameters:
   - `xss`: Cross-Site Scripting scan
   - `csrf`: Cross-Site Request Forgery scan
   - `openredirect`: Open Redirect vulnerability scan
+  - `sensitive `: Sensitive information disclosure scan
+  - `sqlinjection`: SQL injection vulnerabilities
+  - `headers`: Security header analysis
+  - `infodisclosure`: Information disclosure vulnerabilities
+  - `traversal `: Directory traversal vulnerabilities
 
 Example usage with MCP client:
 
